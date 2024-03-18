@@ -3,8 +3,7 @@ import { useEffect, useRef } from 'react';
 
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-// import Typography from "@mui/material/Typography";
-import { ThemedTitleV2 } from '@refinedev/mui';
+import Typography from '@mui/material/Typography';
 
 import { CredentialResponse } from '../interfaces/google';
 
@@ -62,17 +61,16 @@ export const Login: React.FC = () => {
         justifyContent="center"
         flexDirection="column"
       >
-        <ThemedTitleV2
-          collapsed={false}
-          wrapperStyles={{
-            fontSize: '22px',
-            justifyContent: 'center',
-          }}
-        />
+        {/* Updated title using Typography component */}
+        <Typography
+          variant="h5"
+          align="center"
+          style={{ marginBottom: '20px', color: '#000 ' }}
+        >
+          Car Rental Services
+        </Typography>
 
         <GoogleButton />
-
-        {/* The "Powered by Google" text and logo have been removed */}
       </Box>
     </Container>
   );
