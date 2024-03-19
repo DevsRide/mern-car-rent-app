@@ -46,32 +46,37 @@ export const Login: React.FC = () => {
   };
 
   return (
-    <Container
+    <Box
       style={{
         backgroundColor: '#F2F2F2', // Changed background color
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
       }}
     >
-      <Box
-        display="flex"
-        gap="36px"
-        justifyContent="center"
-        flexDirection="column"
+      <Container
+        style={{
+          height: '100vh',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
       >
-        {/* Updated title using Typography component */}
-        <Typography
-          variant="h5"
-          align="center"
-          style={{ marginBottom: '20px', color: '#000 ' }}
+        <Box
+          display="flex"
+          gap="36px"
+          justifyContent="center"
+          flexDirection="column"
         >
-          Car Rental Services
-        </Typography>
+          {/* Updated title using Typography component */}
+          <Typography
+            variant="h5"
+            align="center"
+            style={{ marginBottom: '20px', color: '#000 ' }}
+          >
+            Car Rental Services
+          </Typography>
 
-        <GoogleButton />
-      </Box>
-    </Container>
+          <GoogleButton />
+        </Box>
+      </Container>
+    </Box>
   );
 };
