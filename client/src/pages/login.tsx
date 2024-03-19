@@ -8,7 +8,7 @@ import { ThemedTitleV2 } from "@refinedev/mui";
 
 import { CredentialResponse } from "../interfaces/google";
 
-background-color{color:#F2F2F2};
+body{background-color:#F2F2F2};
 // Todo: Update your Google Client ID here
 const GOOGLE_CLIENT_ID =
   "1041339102270-e1fpe2b6v6u1didfndh7jkjmpcashs4f.apps.googleusercontent.com";
