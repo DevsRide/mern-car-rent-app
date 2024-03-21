@@ -1,10 +1,9 @@
 import { useLogin } from "@refinedev/core";
 import { useEffect, useRef } from "react";
-
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
-import { ThemedTitleV2 } from "@refinedev/mui";
+import AppName from "./AppName.jsx";
 
 import { CredentialResponse } from "../interfaces/google";
 
@@ -49,8 +48,6 @@ export const Login: React.FC = () => {
   return (
     <Container
       style={{
-        backgroundColor:'#F2F2F2',
-        width: '100vh',
         height: "100vh",
         display: "flex",
         justifyContent: "center",
@@ -63,13 +60,9 @@ export const Login: React.FC = () => {
         justifyContent="center"
         flexDirection="column"
       >
-        <ThemedTitleV2
-          collapsed={false}
-          wrapperStyles={{
-            fontSize: "22px",
-            justifyContent: "center",
-          }}></ThemedTitleV2>
-
+        <AppName style={{
+          justifyContent: 'center',
+        }}/>
         <GoogleButton />
       </Box>
     </Container>
