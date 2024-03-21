@@ -1,6 +1,6 @@
 import { useLogin } from "@refinedev/core";
 import { useEffect, useRef } from "react";
-
+import './loginStyle.css';
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
@@ -49,7 +49,6 @@ export const Login: React.FC = () => {
   return (
     <Container
       style={{
-        backgroundColor: '#F2F2F2',
         height: "100vh",
         display: "flex",
         justifyContent: "center",
