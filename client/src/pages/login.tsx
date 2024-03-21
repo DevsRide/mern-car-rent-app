@@ -49,7 +49,8 @@ export const Login: React.FC = () => {
   return (
     <Container
       style={{
-        backgroundColor: '#F2F2F2',
+        backgroundColor:'#F2F2F2',
+        width: '100vh',
         height: "100vh",
         display: "flex",
         justifyContent: "center",
@@ -67,7 +68,7 @@ export const Login: React.FC = () => {
           wrapperStyles={{
             fontSize: "22px",
             justifyContent: "center",
-          }}>Car Rental Services</ThemedTitleV2>
+          }}></ThemedTitleV2>
 
         <GoogleButton />
       </Box>
