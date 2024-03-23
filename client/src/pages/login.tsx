@@ -3,8 +3,6 @@ import { useEffect, useRef } from "react";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
-import AppName from "./AppName.jsx";
-
 import { CredentialResponse } from "../interfaces/google";
 
 // Todo: Update your Google Client ID here
@@ -60,9 +58,7 @@ export const Login: React.FC = () => {
         justifyContent="center"
         flexDirection="column"
       >
-        <AppName style={{
-          justifyContent: 'center',
-        }}/>
+        <Typography style={{ fontSize:'22px' }}>Car Rental Services</Typography>
         <GoogleButton />
       </Box>
     </Container>
