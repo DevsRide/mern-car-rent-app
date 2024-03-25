@@ -1,6 +1,6 @@
 import { useLogin } from "@refinedev/core";
 import { useEffect, useRef } from "react";
-
+import './loginStyle.css';
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
@@ -66,20 +66,9 @@ export const Login: React.FC = () => {
           wrapperStyles={{
             fontSize: "22px",
             justifyContent: "center",
-          }}
-        />
+          }}>Car Rental Services</ThemedTitleV2>
 
         <GoogleButton />
-
-        <Typography align="center" color={"text.secondary"} fontSize="12px">
-          Powered by
-          <img
-            style={{ padding: "0 5px" }}
-            alt="Google"
-            src="https://refine.ams3.cdn.digitaloceanspaces.com/superplate-auth-icons%2Fgoogle.svg"
-          />
-          Google
-        </Typography>
       </Box>
     </Container>
   );
